@@ -5,7 +5,7 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 import devtoolsJson from 'vite-plugin-devtools-json'
 
 export default defineConfig({
-  plugins: [tailwindcss(), reactRouter(), tsconfigPaths(), devtoolsJson()],
+  plugins: [tailwindcss(), reactRouter(), tsconfigPaths(), devtoolsJson(), tailwindcss()],
   css: {
     devSourcemap: true
   }
